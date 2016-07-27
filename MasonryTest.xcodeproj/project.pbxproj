@@ -14,6 +14,11 @@
 		F4790F5C1D489F0500D84C09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4790F5A1D489F0500D84C09 /* Main.storyboard */; };
 		F4790F5E1D489F0500D84C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4790F5D1D489F0500D84C09 /* Assets.xcassets */; };
 		F4790F611D489F0500D84C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4790F5F1D489F0500D84C09 /* LaunchScreen.storyboard */; };
+		F4790F6A1D48A7DF00D84C09 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F691D48A7DF00D84C09 /* UIBaseViewController.m */; };
+		F4790F6D1D48A7F800D84C09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F6C1D48A7F800D84C09 /* LoginViewController.m */; };
+		F4790F721D48ABAB00D84C09 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F711D48ABAB00D84C09 /* LoginView.m */; };
+		F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F751D48AD9300D84C09 /* UIColor+JKRandom.m */; };
+		F4790F7B1D48B86700D84C09 /* FlatNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F7A1D48B86700D84C09 /* FlatNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,16 @@
 		F4790F5D1D489F0500D84C09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4790F601D489F0500D84C09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4790F621D489F0500D84C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4790F681D48A7DF00D84C09 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
+		F4790F691D48A7DF00D84C09 /* UIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseViewController.m; sourceTree = "<group>"; };
+		F4790F6B1D48A7F800D84C09 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F4790F6C1D48A7F800D84C09 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F4790F701D48ABAB00D84C09 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		F4790F711D48ABAB00D84C09 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		F4790F741D48AD9300D84C09 /* UIColor+JKRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKRandom.h"; sourceTree = "<group>"; };
+		F4790F751D48AD9300D84C09 /* UIColor+JKRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKRandom.m"; sourceTree = "<group>"; };
+		F4790F791D48B86700D84C09 /* FlatNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatNavigationBar.h; sourceTree = "<group>"; };
+		F4790F7A1D48B86700D84C09 /* FlatNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +101,9 @@
 				F4790F551D489F0500D84C09 /* AppDelegate.m */,
 				F4790F571D489F0500D84C09 /* ViewController.h */,
 				F4790F581D489F0500D84C09 /* ViewController.m */,
+				F4790F731D48AD5D00D84C09 /* tools */,
+				F4790F6F1D48AB9200D84C09 /* view */,
+				F4790F6E1D48A80B00D84C09 /* viewController */,
 				F4790F5A1D489F0500D84C09 /* Main.storyboard */,
 				F4790F5D1D489F0500D84C09 /* Assets.xcassets */,
 				F4790F5F1D489F0500D84C09 /* LaunchScreen.storyboard */,
@@ -101,6 +119,53 @@
 				F4790F521D489F0500D84C09 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4790F6E1D48A80B00D84C09 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F6B1D48A7F800D84C09 /* LoginViewController.h */,
+				F4790F6C1D48A7F800D84C09 /* LoginViewController.m */,
+				F4790F681D48A7DF00D84C09 /* UIBaseViewController.h */,
+				F4790F691D48A7DF00D84C09 /* UIBaseViewController.m */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		F4790F6F1D48AB9200D84C09 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F781D48B85300D84C09 /* BaseView */,
+				F4790F771D48B24300D84C09 /* LoginView */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F4790F731D48AD5D00D84C09 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F741D48AD9300D84C09 /* UIColor+JKRandom.h */,
+				F4790F751D48AD9300D84C09 /* UIColor+JKRandom.m */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		F4790F771D48B24300D84C09 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F701D48ABAB00D84C09 /* LoginView.h */,
+				F4790F711D48ABAB00D84C09 /* LoginView.m */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
+		F4790F781D48B85300D84C09 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F791D48B86700D84C09 /* FlatNavigationBar.h */,
+				F4790F7A1D48B86700D84C09 /* FlatNavigationBar.m */,
+			);
+			name = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4790F721D48ABAB00D84C09 /* LoginView.m in Sources */,
 				F4790F591D489F0500D84C09 /* ViewController.m in Sources */,
+				F4790F7B1D48B86700D84C09 /* FlatNavigationBar.m in Sources */,
+				F4790F6A1D48A7DF00D84C09 /* UIBaseViewController.m in Sources */,
 				F4790F561D489F0500D84C09 /* AppDelegate.m in Sources */,
 				F4790F531D489F0500D84C09 /* main.m in Sources */,
+				F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */,
+				F4790F6D1D48A7F800D84C09 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -327,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
