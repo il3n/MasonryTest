@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CDE169301618C96E644F357 /* libPods-MasonryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */; };
 		F4790F531D489F0500D84C09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F521D489F0500D84C09 /* main.m */; };
 		F4790F561D489F0500D84C09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F551D489F0500D84C09 /* AppDelegate.m */; };
 		F4790F591D489F0500D84C09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F581D489F0500D84C09 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB9307E48E85A984E28DFD3 /* Pods-MasonryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest.release.xcconfig"; sourceTree = "<group>"; };
+		9060C0D7EE48B1B84688AD1E /* Pods-MasonryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4790F4E1D489F0500D84C09 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4790F521D489F0500D84C09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4790F541D489F0500D84C09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDE169301618C96E644F357 /* libPods-MasonryTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A2842AA0DDF8657CD376393 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522D3824195C558CD2DAD42E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9060C0D7EE48B1B84688AD1E /* Pods-MasonryTest.debug.xcconfig */,
+				1DB9307E48E85A984E28DFD3 /* Pods-MasonryTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F4790F451D489F0500D84C09 = {
 			isa = PBXGroup;
 			children = (
 				F4790F501D489F0500D84C09 /* MasonryTest */,
 				F4790F4F1D489F0500D84C09 /* Products */,
+				522D3824195C558CD2DAD42E /* Pods */,
+				1A2842AA0DDF8657CD376393 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4790F651D489F0500D84C09 /* Build configuration list for PBXNativeTarget "MasonryTest" */;
 			buildPhases = (
+				C7BCBAC3ACBE9D085A14E07C /* [CP] Check Pods Manifest.lock */,
 				F4790F4A1D489F0500D84C09 /* Sources */,
 				F4790F4B1D489F0500D84C09 /* Frameworks */,
 				F4790F4C1D489F0500D84C09 /* Resources */,
+				A33CDDC3AF38D68E65D50081 /* [CP] Embed Pods Frameworks */,
+				C79112E18A5D9E64BC7A6E1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A33CDDC3AF38D68E65D50081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79112E18A5D9E64BC7A6E1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BCBAC3ACBE9D085A14E07C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4790F4A1D489F0500D84C09 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		F4790F661D489F0500D84C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9060C0D7EE48B1B84688AD1E /* Pods-MasonryTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MasonryTest/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		F4790F671D489F0500D84C09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB9307E48E85A984E28DFD3 /* Pods-MasonryTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MasonryTest/Info.plist;
@@ -300,6 +377,7 @@
 				F4790F671D489F0500D84C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
