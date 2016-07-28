@@ -8,11 +8,11 @@
 
 #import "LoginUsernameViewController.h"
 #import <Masonry.h>
-#import "LoginView.h"
+#import "LoginUsernameView.h"
 #import "UIColor+JKRandom.h"
 
-@interface LoginUsernameViewController ()<LoginViewDelegate>
-@property (nonatomic, strong) LoginView *loginView;
+@interface LoginUsernameViewController ()<LoginUsernameViewDelegate>
+@property (nonatomic, strong) LoginUsernameView *loginView;
 @end
 
 @implementation LoginUsernameViewController
@@ -29,6 +29,13 @@
     [super viewWillDisappear:animated];
     
     self.navigationController.navigationBarHidden = NO;
+}
+
+#pragma mark-delegate
+
+-(void) loginUsernameView:(LoginUsernameView *)loginUsernameView didPressedRegisterButton:(UIButton *)registerButton {
+    
+    
 }
 
 #pragma mark-inherit
@@ -57,10 +64,10 @@
 
 #pragma mark-getter
 
--(LoginView *)loginView {
+-(LoginUsernameView *)loginView {
     
     if (!_loginView) {
-        _loginView = [[LoginView alloc] initWithFrame:CGRectZero];
+        _loginView = [[LoginUsernameView alloc] initWithFrame:CGRectZero];
         _loginView.delegate = self;
     }
     
