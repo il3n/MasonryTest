@@ -28,6 +28,8 @@
 		F4790F981D4A064100D84C09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F971D4A064100D84C09 /* LoginViewController.m */; };
 		F4790F9C1D4A066800D84C09 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F9B1D4A066800D84C09 /* LoginView.m */; };
 		F4790FA01D4A0C7D00D84C09 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F9F1D4A0C7D00D84C09 /* MainView.m */; };
+		F4790FA41D4A186500D84C09 /* FPUsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790FA31D4A186500D84C09 /* FPUsernameViewController.m */; };
+		F4790FA71D4A198B00D84C09 /* FPPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,10 @@
 		F4790F9B1D4A066800D84C09 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		F4790F9E1D4A0C7D00D84C09 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		F4790F9F1D4A0C7D00D84C09 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		F4790FA21D4A186500D84C09 /* FPUsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPUsernameViewController.h; sourceTree = "<group>"; };
+		F4790FA31D4A186500D84C09 /* FPUsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPUsernameViewController.m; sourceTree = "<group>"; };
+		F4790FA51D4A198B00D84C09 /* FPPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPasswordViewController.h; sourceTree = "<group>"; };
+		F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 		F4790F6E1D48A80B00D84C09 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				F4790FA11D4A185000D84C09 /* ForgetPasswordViewController */,
 				F4790F951D4A062C00D84C09 /* LoginViewController */,
 				F4790F831D49AF0D00D84C09 /* BaseViewController */,
 				F4790F821D49AEE500D84C09 /* RegisterViewController */,
@@ -271,6 +278,17 @@
 				F4790F9F1D4A0C7D00D84C09 /* MainView.m */,
 			);
 			name = MainView;
+			sourceTree = "<group>";
+		};
+		F4790FA11D4A185000D84C09 /* ForgetPasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4790FA21D4A186500D84C09 /* FPUsernameViewController.h */,
+				F4790FA31D4A186500D84C09 /* FPUsernameViewController.m */,
+				F4790FA51D4A198B00D84C09 /* FPPasswordViewController.h */,
+				F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */,
+			);
+			name = ForgetPasswordViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4790FA71D4A198B00D84C09 /* FPPasswordViewController.m in Sources */,
 				F4790F721D48ABAB00D84C09 /* RegisterUsernameView.m in Sources */,
 				F4790F871D49B70E00D84C09 /* RichTextfield.m in Sources */,
 				F4790F941D49F37F00D84C09 /* RegisterPasswordView.m in Sources */,
@@ -402,6 +421,7 @@
 				F4790F591D489F0500D84C09 /* ViewController.m in Sources */,
 				F4790F7B1D48B86700D84C09 /* FlatNavigationBar.m in Sources */,
 				F4790F8E1D49E7BD00D84C09 /* UILabel+Size.m in Sources */,
+				F4790FA41D4A186500D84C09 /* FPUsernameViewController.m in Sources */,
 				F4790F6A1D48A7DF00D84C09 /* UIBaseViewController.m in Sources */,
 				F4790F561D489F0500D84C09 /* AppDelegate.m in Sources */,
 				F4790F9C1D4A066800D84C09 /* LoginView.m in Sources */,

@@ -10,8 +10,9 @@
 #import "RegisterUsernameViewController.h"
 #import "LoginViewController.h"
 #import "MainView.h"
+#import "FPUsernameViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<MainViewDelegate>
 
 @end
 
@@ -19,9 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MainView *mainView = [[MainView alloc] initWithFrame:self.view.bounds];
-    mainView.backgroundColor = [UIColor jk_randomColor];
-    [self.view addSubview:mainView];
+//    MainView *mainView = [[MainView alloc] initWithFrame:self.view.bounds];
+//    mainView.backgroundColor = [UIColor jk_randomColor];
+//    mainView.delegate = self;
+//    [self.view addSubview:mainView];
 }
 - (IBAction)buttonPressed:(UIButton *)sender {
     
@@ -30,11 +32,11 @@
     
     LoginViewController *loginViewController = [[LoginViewController alloc] initWithFlatNavigationBar];
     [self.navigationController pushViewController:loginViewController animated:YES];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark-delegate
+
 
 @end

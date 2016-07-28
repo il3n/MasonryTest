@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "LoginView.h"
+#import "FPUsernameViewController.h"
+
 @interface LoginViewController ()<LoginViewDelegate>
 @property (nonatomic, strong) LoginView *loginView;
 @end
@@ -24,11 +26,18 @@
 #pragma mark-delegate
 
 -(void) loginView:(LoginView *)loginView didPressedForgetPasswordButton:(UIButton *)forgetPasswordButton {
-    
+    [self p_pushFPUsernameViewController];
 }
 
 -(void) loginView:(LoginView *)loginView didPressedLoginButton:(UIButton *)loginButton {
     
+}
+
+#pragma mark-private method
+
+-(void) p_pushFPUsernameViewController {
+    FPUsernameViewController *fpUsernameViewController = [[FPUsernameViewController alloc] initWithFlatNavigationBar];
+    [self.navigationController pushViewController:fpUsernameViewController animated:YES];
 }
 
 #pragma mark-layout
