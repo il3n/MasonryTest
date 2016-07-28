@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Youku.com. All rights reserved.
 //
 
-// 登录
+// 注册
 #import "UIBaseViewController.h"
 
-@interface LoginUsernameViewController : UIBaseViewController
+@interface RegisterUsernameViewController : UIBaseViewController
 
 @end

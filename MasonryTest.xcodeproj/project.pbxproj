@@ -15,12 +15,18 @@
 		F4790F5E1D489F0500D84C09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4790F5D1D489F0500D84C09 /* Assets.xcassets */; };
 		F4790F611D489F0500D84C09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4790F5F1D489F0500D84C09 /* LaunchScreen.storyboard */; };
 		F4790F6A1D48A7DF00D84C09 /* UIBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F691D48A7DF00D84C09 /* UIBaseViewController.m */; };
-		F4790F6D1D48A7F800D84C09 /* LoginUsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F6C1D48A7F800D84C09 /* LoginUsernameViewController.m */; };
-		F4790F721D48ABAB00D84C09 /* LoginUsernameView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F711D48ABAB00D84C09 /* LoginUsernameView.m */; };
+		F4790F6D1D48A7F800D84C09 /* RegisterUsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F6C1D48A7F800D84C09 /* RegisterUsernameViewController.m */; };
+		F4790F721D48ABAB00D84C09 /* RegisterUsernameView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F711D48ABAB00D84C09 /* RegisterUsernameView.m */; };
 		F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F751D48AD9300D84C09 /* UIColor+JKRandom.m */; };
 		F4790F7B1D48B86700D84C09 /* FlatNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F7A1D48B86700D84C09 /* FlatNavigationBar.m */; };
 		F4790F811D49A70D00D84C09 /* SysVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F801D49A70D00D84C09 /* SysVersion.m */; };
 		F4790F871D49B70E00D84C09 /* RichTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F861D49B70E00D84C09 /* RichTextfield.m */; };
+		F4790F8B1D49E3A600D84C09 /* UIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F8A1D49E3A600D84C09 /* UIBaseView.m */; };
+		F4790F8E1D49E7BD00D84C09 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F8D1D49E7BD00D84C09 /* UILabel+Size.m */; };
+		F4790F911D49F2C000D84C09 /* RegisterPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F901D49F2C000D84C09 /* RegisterPasswordViewController.m */; };
+		F4790F941D49F37F00D84C09 /* RegisterPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F931D49F37F00D84C09 /* RegisterPasswordView.m */; };
+		F4790F981D4A064100D84C09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F971D4A064100D84C09 /* LoginViewController.m */; };
+		F4790F9C1D4A066800D84C09 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F9B1D4A066800D84C09 /* LoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +45,10 @@
 		F4790F621D489F0500D84C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4790F681D48A7DF00D84C09 /* UIBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseViewController.h; sourceTree = "<group>"; };
 		F4790F691D48A7DF00D84C09 /* UIBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseViewController.m; sourceTree = "<group>"; };
-		F4790F6B1D48A7F800D84C09 /* LoginUsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUsernameViewController.h; sourceTree = "<group>"; };
-		F4790F6C1D48A7F800D84C09 /* LoginUsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUsernameViewController.m; sourceTree = "<group>"; };
-		F4790F701D48ABAB00D84C09 /* LoginUsernameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUsernameView.h; sourceTree = "<group>"; };
-		F4790F711D48ABAB00D84C09 /* LoginUsernameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUsernameView.m; sourceTree = "<group>"; };
+		F4790F6B1D48A7F800D84C09 /* RegisterUsernameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUsernameViewController.h; sourceTree = "<group>"; };
+		F4790F6C1D48A7F800D84C09 /* RegisterUsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUsernameViewController.m; sourceTree = "<group>"; };
+		F4790F701D48ABAB00D84C09 /* RegisterUsernameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterUsernameView.h; sourceTree = "<group>"; };
+		F4790F711D48ABAB00D84C09 /* RegisterUsernameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterUsernameView.m; sourceTree = "<group>"; };
 		F4790F741D48AD9300D84C09 /* UIColor+JKRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKRandom.h"; sourceTree = "<group>"; };
 		F4790F751D48AD9300D84C09 /* UIColor+JKRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKRandom.m"; sourceTree = "<group>"; };
 		F4790F791D48B86700D84C09 /* FlatNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatNavigationBar.h; sourceTree = "<group>"; };
@@ -53,6 +59,18 @@
 		F4790F801D49A70D00D84C09 /* SysVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysVersion.m; sourceTree = "<group>"; };
 		F4790F851D49B70E00D84C09 /* RichTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextfield.h; sourceTree = "<group>"; };
 		F4790F861D49B70E00D84C09 /* RichTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichTextfield.m; sourceTree = "<group>"; };
+		F4790F891D49E3A600D84C09 /* UIBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBaseView.h; sourceTree = "<group>"; };
+		F4790F8A1D49E3A600D84C09 /* UIBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBaseView.m; sourceTree = "<group>"; };
+		F4790F8C1D49E7BD00D84C09 /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Size.h"; sourceTree = "<group>"; };
+		F4790F8D1D49E7BD00D84C09 /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Size.m"; sourceTree = "<group>"; };
+		F4790F8F1D49F2C000D84C09 /* RegisterPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterPasswordViewController.h; sourceTree = "<group>"; };
+		F4790F901D49F2C000D84C09 /* RegisterPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterPasswordViewController.m; sourceTree = "<group>"; };
+		F4790F921D49F37F00D84C09 /* RegisterPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterPasswordView.h; sourceTree = "<group>"; };
+		F4790F931D49F37F00D84C09 /* RegisterPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterPasswordView.m; sourceTree = "<group>"; };
+		F4790F961D4A064100D84C09 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F4790F971D4A064100D84C09 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F4790F9A1D4A066800D84C09 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		F4790F9B1D4A066800D84C09 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +152,9 @@
 		F4790F6E1D48A80B00D84C09 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				F4790F951D4A062C00D84C09 /* LoginViewController */,
 				F4790F831D49AF0D00D84C09 /* BaseViewController */,
-				F4790F821D49AEE500D84C09 /* LoginViewController */,
+				F4790F821D49AEE500D84C09 /* RegisterViewController */,
 			);
 			name = viewController;
 			sourceTree = "<group>";
@@ -143,9 +162,11 @@
 		F4790F6F1D48AB9200D84C09 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F4790F881D49E39A00D84C09 /* BaseView */,
 				F4790F841D49B57000D84C09 /* RichTextfield */,
-				F4790F781D48B85300D84C09 /* BaseView */,
-				F4790F771D48B24300D84C09 /* LoginView */,
+				F4790F781D48B85300D84C09 /* FlatNavigationBar */,
+				F4790F771D48B24300D84C09 /* RegisterView */,
+				F4790F991D4A065200D84C09 /* LoginView */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -157,35 +178,41 @@
 				F4790F751D48AD9300D84C09 /* UIColor+JKRandom.m */,
 				F4790F7F1D49A70D00D84C09 /* SysVersion.h */,
 				F4790F801D49A70D00D84C09 /* SysVersion.m */,
+				F4790F8C1D49E7BD00D84C09 /* UILabel+Size.h */,
+				F4790F8D1D49E7BD00D84C09 /* UILabel+Size.m */,
 			);
 			name = tools;
 			sourceTree = "<group>";
 		};
-		F4790F771D48B24300D84C09 /* LoginView */ = {
+		F4790F771D48B24300D84C09 /* RegisterView */ = {
 			isa = PBXGroup;
 			children = (
-				F4790F701D48ABAB00D84C09 /* LoginUsernameView.h */,
-				F4790F711D48ABAB00D84C09 /* LoginUsernameView.m */,
+				F4790F701D48ABAB00D84C09 /* RegisterUsernameView.h */,
+				F4790F711D48ABAB00D84C09 /* RegisterUsernameView.m */,
+				F4790F921D49F37F00D84C09 /* RegisterPasswordView.h */,
+				F4790F931D49F37F00D84C09 /* RegisterPasswordView.m */,
 			);
-			name = LoginView;
+			name = RegisterView;
 			sourceTree = "<group>";
 		};
-		F4790F781D48B85300D84C09 /* BaseView */ = {
+		F4790F781D48B85300D84C09 /* FlatNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
 				F4790F791D48B86700D84C09 /* FlatNavigationBar.h */,
 				F4790F7A1D48B86700D84C09 /* FlatNavigationBar.m */,
 			);
-			name = BaseView;
+			name = FlatNavigationBar;
 			sourceTree = "<group>";
 		};
-		F4790F821D49AEE500D84C09 /* LoginViewController */ = {
+		F4790F821D49AEE500D84C09 /* RegisterViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F4790F6B1D48A7F800D84C09 /* LoginUsernameViewController.h */,
-				F4790F6C1D48A7F800D84C09 /* LoginUsernameViewController.m */,
+				F4790F6B1D48A7F800D84C09 /* RegisterUsernameViewController.h */,
+				F4790F6C1D48A7F800D84C09 /* RegisterUsernameViewController.m */,
+				F4790F8F1D49F2C000D84C09 /* RegisterPasswordViewController.h */,
+				F4790F901D49F2C000D84C09 /* RegisterPasswordViewController.m */,
 			);
-			name = LoginViewController;
+			name = RegisterViewController;
 			sourceTree = "<group>";
 		};
 		F4790F831D49AF0D00D84C09 /* BaseViewController */ = {
@@ -204,6 +231,33 @@
 				F4790F861D49B70E00D84C09 /* RichTextfield.m */,
 			);
 			name = RichTextfield;
+			sourceTree = "<group>";
+		};
+		F4790F881D49E39A00D84C09 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F891D49E3A600D84C09 /* UIBaseView.h */,
+				F4790F8A1D49E3A600D84C09 /* UIBaseView.m */,
+			);
+			name = BaseView;
+			sourceTree = "<group>";
+		};
+		F4790F951D4A062C00D84C09 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F961D4A064100D84C09 /* LoginViewController.h */,
+				F4790F971D4A064100D84C09 /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		F4790F991D4A065200D84C09 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F9A1D4A066800D84C09 /* LoginView.h */,
+				F4790F9B1D4A066800D84C09 /* LoginView.m */,
+			);
+			name = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,16 +381,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4790F721D48ABAB00D84C09 /* LoginUsernameView.m in Sources */,
+				F4790F721D48ABAB00D84C09 /* RegisterUsernameView.m in Sources */,
 				F4790F871D49B70E00D84C09 /* RichTextfield.m in Sources */,
+				F4790F941D49F37F00D84C09 /* RegisterPasswordView.m in Sources */,
+				F4790F8B1D49E3A600D84C09 /* UIBaseView.m in Sources */,
+				F4790F911D49F2C000D84C09 /* RegisterPasswordViewController.m in Sources */,
 				F4790F591D489F0500D84C09 /* ViewController.m in Sources */,
 				F4790F7B1D48B86700D84C09 /* FlatNavigationBar.m in Sources */,
+				F4790F8E1D49E7BD00D84C09 /* UILabel+Size.m in Sources */,
 				F4790F6A1D48A7DF00D84C09 /* UIBaseViewController.m in Sources */,
 				F4790F561D489F0500D84C09 /* AppDelegate.m in Sources */,
+				F4790F9C1D4A066800D84C09 /* LoginView.m in Sources */,
 				F4790F531D489F0500D84C09 /* main.m in Sources */,
 				F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */,
-				F4790F6D1D48A7F800D84C09 /* LoginUsernameViewController.m in Sources */,
+				F4790F6D1D48A7F800D84C09 /* RegisterUsernameViewController.m in Sources */,
 				F4790F811D49A70D00D84C09 /* SysVersion.m in Sources */,
+				F4790F981D4A064100D84C09 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

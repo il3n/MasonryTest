@@ -79,7 +79,7 @@
         _titleLabel.numberOfLines = 1;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.backgroundColor = [UIColor jk_randomColor];
-        _titleLabel.font = [UIFont boldSystemFontOfSize:kFlatNavigationBarTitleFontSize];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:kFontSize18];
     }
     
     return _titleLabel;

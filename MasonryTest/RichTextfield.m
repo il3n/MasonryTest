@@ -42,6 +42,7 @@
         iconImageName = @"";
         self.textField.secureTextEntry = YES;
         self.toggleSecurityButton = [[UIButton alloc] init];
+        self.toggleSecurityButton.backgroundColor = [UIColor jk_randomColor];
         [self.toggleSecurityButton addTarget:self action:@selector(p_buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -70,7 +71,7 @@
     }];
     
     [self.iconImageView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(kMargin10);
+        make.left.equalTo(self);
         make.top.equalTo(self);
         make.bottom.equalTo(self);
         make.width.equalTo(@(kRichTextFieldIconWidth));
@@ -101,6 +102,8 @@
         _textField.spellCheckingType = UITextSpellCheckingTypeNo;
         _textField.borderStyle = UITextBorderStyleNone;
         _textField.backgroundColor = [UIColor jk_randomColor];
+        _textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        _textField.font = [UIFont systemFontOfSize:kFontSizeDefault];
     }
     return _textField;
 }
