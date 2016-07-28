@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RegisterUsernameViewController.h"
 #import "LoginViewController.h"
+#import "MainView.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    MainView *mainView = [[MainView alloc] initWithFrame:self.view.bounds];
+    mainView.backgroundColor = [UIColor jk_randomColor];
+    [self.view addSubview:mainView];
 }
 - (IBAction)buttonPressed:(UIButton *)sender {
     

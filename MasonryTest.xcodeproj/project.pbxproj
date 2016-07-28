@@ -27,6 +27,7 @@
 		F4790F941D49F37F00D84C09 /* RegisterPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F931D49F37F00D84C09 /* RegisterPasswordView.m */; };
 		F4790F981D4A064100D84C09 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F971D4A064100D84C09 /* LoginViewController.m */; };
 		F4790F9C1D4A066800D84C09 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F9B1D4A066800D84C09 /* LoginView.m */; };
+		F4790FA01D4A0C7D00D84C09 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F9F1D4A0C7D00D84C09 /* MainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		F4790F971D4A064100D84C09 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F4790F9A1D4A066800D84C09 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		F4790F9B1D4A066800D84C09 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		F4790F9E1D4A0C7D00D84C09 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		F4790F9F1D4A0C7D00D84C09 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 		F4790F6F1D48AB9200D84C09 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F4790F9D1D4A0C6B00D84C09 /* MainView */,
 				F4790F881D49E39A00D84C09 /* BaseView */,
 				F4790F841D49B57000D84C09 /* RichTextfield */,
 				F4790F781D48B85300D84C09 /* FlatNavigationBar */,
@@ -258,6 +262,15 @@
 				F4790F9B1D4A066800D84C09 /* LoginView.m */,
 			);
 			name = LoginView;
+			sourceTree = "<group>";
+		};
+		F4790F9D1D4A0C6B00D84C09 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				F4790F9E1D4A0C7D00D84C09 /* MainView.h */,
+				F4790F9F1D4A0C7D00D84C09 /* MainView.m */,
+			);
+			name = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +408,7 @@
 				F4790F531D489F0500D84C09 /* main.m in Sources */,
 				F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */,
 				F4790F6D1D48A7F800D84C09 /* RegisterUsernameViewController.m in Sources */,
+				F4790FA01D4A0C7D00D84C09 /* MainView.m in Sources */,
 				F4790F811D49A70D00D84C09 /* SysVersion.m in Sources */,
 				F4790F981D4A064100D84C09 /* LoginViewController.m in Sources */,
 			);

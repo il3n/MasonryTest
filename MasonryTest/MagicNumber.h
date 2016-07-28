@@ -20,9 +20,20 @@ static const int kMagicNumber30 = 30;
 static const int kMagicNumber40 = 40;
 static const int kMagicNumber44 = 44;
 static const int kMagicNumber50 = 50;
+static const int kMagicNumber80 = 120;
+
+static const float kMagicNumberDot1 = 0.1;
+static const float kMagicNumberDot2 = 0.2;
+static const float kMagicNumberDot3 = 0.3;
+static const float kMagicNumberDot4 = 0.4;
+
+// image
+static const int kMainViewIconWidth = kMagicNumber80;
+static const int kMainViewIconHeight = kMagicNumber80;
+
 
 // button
-static const int kButtonHeightDefault = kMagicNumber40;
+static const int kButtonHeightDefault = kMagicNumber44;
 
 // font
 static const int kFontSize18 = kMagicNumber18;
