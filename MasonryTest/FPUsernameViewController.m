@@ -43,9 +43,7 @@
 #pragma mark-layout
 
 -(void) viewDidLayoutSubviews {
-    
     [super viewDidLayoutSubviews];
-    
     [self.forgetPasswordView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@(kStatusBarHeight+kNavigationBarHeight));
         make.left.equalTo(@0);
