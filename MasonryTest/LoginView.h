@@ -10,7 +10,6 @@
 
 @class LoginView;
 @protocol LoginViewDelegate <NSObject>
--(void) loginView:(LoginView *)loginView
 @end
 
 @interface LoginView : UIView
