@@ -23,4 +23,6 @@
 #pragma mark-inherit
 -(void) i_setupSubviews;
 
+@property (nonatomic, copy) NSString *flatNavigationBarTitle;
+
 @end

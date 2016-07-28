@@ -32,7 +32,6 @@
 #pragma mark-private method
 
 -(void) p_setupSubviews {
-    
     [self addSubview:self.backButton];
     [self addSubview:self.titleLabel];
 }
@@ -45,34 +44,28 @@
 
 #pragma mark-layout
 
-+(BOOL) requiresConstraintBasedLayout {
-    return YES;
-}
-
--(void) updateConstraints {
-//    [self.backButton mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@0);
-//        make.top.equalTo(@20);
-//        make.width.equalTo(@60);
-//        make.height.equalTo(@40);
-//    }];
+-(void) layoutSubviews {
     
-    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-
-        make.left.equalTo(self.mas_left);
-        make.right.equalTo(self.mas_right).offset(-1);
-
-        make.top.equalTo(@20);
-        make.height.equalTo(@40);
+    [super layoutSubviews];
+    
+    [self.backButton mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self);
+        make.bottom.equalTo(self);
+        make.width.equalTo(@(kFlatNavigationBarSubviewBackButtonWidth));
+        make.height.equalTo(@(kNavigationBarHeight));
     }];
     
-    [super updateConstraints];
+    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.backButton.mas_right);
+        make.right.equalTo(self.mas_right).offset(-kFlatNavigationBarSubviewBackButtonWidth);
+        make.bottom.equalTo(self);
+        make.height.equalTo(@(kNavigationBarHeight));
+    }];
 }
 
 #pragma mark-getter
 -(UIButton *) backButton {
     if (!_backButton) {
-        
         _backButton = [[UIButton alloc] init];
         [_backButton addTarget:self action:@selector(p_backButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
         _backButton.backgroundColor = [UIColor jk_randomColor];
@@ -86,6 +79,7 @@
         _titleLabel.numberOfLines = 1;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.backgroundColor = [UIColor jk_randomColor];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:kFlatNavigationBarTitleFontSize];
     }
     
     return _titleLabel;

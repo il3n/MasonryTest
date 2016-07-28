@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LoginViewController.h"
+#import "LoginUsernameViewController.h"
 
 @interface ViewController ()
 
@@ -21,7 +21,7 @@
 }
 - (IBAction)buttonPressed:(UIButton *)sender {
     
-    LoginViewController *loginViewController = [[LoginViewController alloc] initWithFlatNavigationBar];
+    LoginUsernameViewController *loginViewController = [[LoginUsernameViewController alloc] initWithFlatNavigationBar];
     [self.navigationController pushViewController:loginViewController animated:YES];
 }
 

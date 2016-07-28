@@ -6,16 +6,16 @@
 //  Copyright © 2016年 Youku.com. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "LoginUsernameViewController.h"
 #import <Masonry.h>
 #import "LoginView.h"
 #import "UIColor+JKRandom.h"
 
-@interface LoginViewController ()<LoginViewDelegate>
+@interface LoginUsernameViewController ()<LoginViewDelegate>
 @property (nonatomic, strong) LoginView *loginView;
 @end
 
-@implementation LoginViewController
+@implementation LoginUsernameViewController
 
 -(void) viewWillAppear:(BOOL)animated {
     
@@ -34,6 +34,8 @@
 #pragma mark-inherit
 
 -(void) i_setupSubviews {
+    
+    self.flatNavigationBarTitle = @"注册";
     
     [self.view addSubview:self.loginView];
 }
@@ -60,7 +62,6 @@
     if (!_loginView) {
         _loginView = [[LoginView alloc] initWithFrame:CGRectZero];
         _loginView.delegate = self;
-//        _loginView.backgroundColor = [UIColor jk_randomColor];
     }
     
     return _loginView;

@@ -9,6 +9,6 @@
 // 登录
 #import "UIBaseViewController.h"
 
-@interface LoginViewController : UIBaseViewController
+@interface LoginUsernameViewController : UIBaseViewController
 
 @end

@@ -63,6 +63,14 @@
     
 }
 
+#pragma mark-setter
+
+-(void) setFlatNavigationBarTitle:(NSString *)flatNavigationBarTitle {
+    
+    _flatNavigationBarTitle = [flatNavigationBarTitle copy];
+    self.flatNavigationBar.titleLabel.text = _flatNavigationBarTitle;
+}
+
 #pragma mark-layout
 
 -(void) viewWillLayoutSubviews {
@@ -90,7 +98,6 @@
     
     _flatNavigationBar = [[FlatNavigationBar alloc] initWithFrame:CGRectZero];
     _flatNavigationBar.delegate = self;
-//    _flatNavigationBar.backgroundColor = [UIColor jk_randomColor];
     [self.view addSubview:_flatNavigationBar];
 }
 

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class LoginView;
 @protocol LoginViewDelegate <NSObject>
-
-
+-(void) loginView:(LoginView *)loginView
 @end
 
 @interface LoginView : UIView
