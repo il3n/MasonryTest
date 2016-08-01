@@ -30,6 +30,8 @@
 		F4790FA01D4A0C7D00D84C09 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F9F1D4A0C7D00D84C09 /* MainView.m */; };
 		F4790FA41D4A186500D84C09 /* FPUsernameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790FA31D4A186500D84C09 /* FPUsernameViewController.m */; };
 		F4790FA71D4A198B00D84C09 /* FPPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */; };
+		F4A20B981D4F225C0080CB21 /* PieChartButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B971D4F225C0080CB21 /* PieChartButton.m */; };
+		F4A20BA01D4F5A6E0080CB21 /* UIColor+Definition.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B9F1D4F5A6E0080CB21 /* UIColor+Definition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,10 @@
 		F4790FA31D4A186500D84C09 /* FPUsernameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPUsernameViewController.m; sourceTree = "<group>"; };
 		F4790FA51D4A198B00D84C09 /* FPPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPasswordViewController.h; sourceTree = "<group>"; };
 		F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPasswordViewController.m; sourceTree = "<group>"; };
+		F4A20B961D4F225C0080CB21 /* PieChartButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartButton.h; sourceTree = "<group>"; };
+		F4A20B971D4F225C0080CB21 /* PieChartButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartButton.m; sourceTree = "<group>"; };
+		F4A20B9E1D4F5A6E0080CB21 /* UIColor+Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Definition.h"; sourceTree = "<group>"; };
+		F4A20B9F1D4F5A6E0080CB21 /* UIColor+Definition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Definition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,7 @@
 		F4790F6F1D48AB9200D84C09 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F4A20B991D4F22600080CB21 /* PieChartButton */,
 				F4790F9D1D4A0C6B00D84C09 /* MainView */,
 				F4790F881D49E39A00D84C09 /* BaseView */,
 				F4790F841D49B57000D84C09 /* RichTextfield */,
@@ -191,6 +198,8 @@
 				F4790F801D49A70D00D84C09 /* SysVersion.m */,
 				F4790F8C1D49E7BD00D84C09 /* UILabel+Size.h */,
 				F4790F8D1D49E7BD00D84C09 /* UILabel+Size.m */,
+				F4A20B9E1D4F5A6E0080CB21 /* UIColor+Definition.h */,
+				F4A20B9F1D4F5A6E0080CB21 /* UIColor+Definition.m */,
 			);
 			name = tools;
 			sourceTree = "<group>";
@@ -289,6 +298,15 @@
 				F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */,
 			);
 			name = ForgetPasswordViewController;
+			sourceTree = "<group>";
+		};
+		F4A20B991D4F22600080CB21 /* PieChartButton */ = {
+			isa = PBXGroup;
+			children = (
+				F4A20B961D4F225C0080CB21 /* PieChartButton.h */,
+				F4A20B971D4F225C0080CB21 /* PieChartButton.m */,
+			);
+			name = PieChartButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,7 +432,9 @@
 			files = (
 				F4790FA71D4A198B00D84C09 /* FPPasswordViewController.m in Sources */,
 				F4790F721D48ABAB00D84C09 /* RegisterUsernameView.m in Sources */,
+				F4A20BA01D4F5A6E0080CB21 /* UIColor+Definition.m in Sources */,
 				F4790F871D49B70E00D84C09 /* RichTextfield.m in Sources */,
+				F4A20B981D4F225C0080CB21 /* PieChartButton.m in Sources */,
 				F4790F941D49F37F00D84C09 /* RegisterPasswordView.m in Sources */,
 				F4790F8B1D49E3A600D84C09 /* UIBaseView.m in Sources */,
 				F4790F911D49F2C000D84C09 /* RegisterPasswordViewController.m in Sources */,

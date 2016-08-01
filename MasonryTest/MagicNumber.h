@@ -10,6 +10,8 @@
 #define MagicNumber_h
 
 // magic number
+static const int kMagicNumber1 = 1;
+static const int kMagicNumber2 = 2;
 static const int kMagicNumber5 = 5;
 static const int kMagicNumber10 = 10;
 static const int kMagicNumber13 = 13;
@@ -20,12 +22,20 @@ static const int kMagicNumber30 = 30;
 static const int kMagicNumber40 = 40;
 static const int kMagicNumber44 = 44;
 static const int kMagicNumber50 = 50;
-static const int kMagicNumber80 = 120;
+static const int kMagicNumber80 = 80;
 
 static const float kMagicNumberDot1 = 0.1;
 static const float kMagicNumberDot2 = 0.2;
 static const float kMagicNumberDot3 = 0.3;
 static const float kMagicNumberDot4 = 0.4;
+static const float kMagicNumberDot5 = 0.5;
+
+// color
+#define kColorPieChartBackground @""
+#define kColorPieChartDefault @""
+#define kColorPieChartSelect @""
+
+
 
 // image
 static const int kMainViewIconWidth = kMagicNumber80;
@@ -34,6 +44,8 @@ static const int kMainViewIconHeight = kMagicNumber80;
 
 // button
 static const int kButtonHeightDefault = kMagicNumber44;
+static const int kPieChartButtonRadius = kMagicNumber80;
+
 
 // font
 static const int kFontSize18 = kMagicNumber18;
