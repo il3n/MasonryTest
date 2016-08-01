@@ -112,12 +112,6 @@
 
 
 
-
-
-
-
-
-
 @interface PieChartButton ()
 @property (nonatomic, strong) CAShapeLayer *backgroundShapeLayer;
 
