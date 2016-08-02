@@ -13,6 +13,7 @@
 #pragma mark-inhert
 
 -(void) i_setupSubviews {
+    [self addSubview:self.backgroundImageView];
     [self addSubview:self.iconImageView];
     [self addSubview:self.loginButton];
     [self addSubview:self.registerButton];
@@ -44,6 +45,10 @@
 -(void) layoutSubviews {
     
     [super layoutSubviews];
+
+    [self.backgroundImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
     
     [self.iconImageView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(kMainViewIconWidth));
@@ -114,6 +119,16 @@
         _iconImageView.contentMode = UIViewContentModeScaleAspectFit;
     }
     return _iconImageView;
+}
+
+-(UIImageView *) backgroundImageView {
+    if (!_backgroundImageView) {
+        _backgroundImageView = [[UIImageView alloc] init];
+        _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+        _backgroundImageView.image = [UIImage imageNamed:@"new_mainview_bg"];
+    }
+    
+    return _backgroundImageView;
 }
 
 @end

@@ -23,6 +23,7 @@
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIButton *demoListButton;
 @property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UIImageView *backgroundImageView;
 
 @property (nonatomic, weak) id<MainViewDelegate>delegate;
 
