@@ -23,6 +23,8 @@ static const int kMagicNumber40 = 40;
 static const int kMagicNumber44 = 44;
 static const int kMagicNumber50 = 50;
 static const int kMagicNumber80 = 80;
+static const int kMagicNumber100 = 100;
+
 
 static const float kMagicNumberDot1 = 0.1;
 static const float kMagicNumberDot2 = 0.2;
@@ -44,7 +46,7 @@ static const int kMainViewIconHeight = kMagicNumber80;
 
 // button
 static const int kButtonHeightDefault = kMagicNumber44;
-static const int kPieChartButtonRadius = kMagicNumber80;
+static const int kPieChartButtonRadius = kMagicNumber100;
 
 
 // font
@@ -78,3 +80,7 @@ static const int kRichTextFieldToggleSecurityButtonWidth = kMagicNumber40;
 
 
 #endif /* MagicNumber_h */
+
+
+
+
