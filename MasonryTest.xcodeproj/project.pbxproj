@@ -33,6 +33,8 @@
 		F4790FA71D4A198B00D84C09 /* FPPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790FA61D4A198B00D84C09 /* FPPasswordViewController.m */; };
 		F4A20B981D4F225C0080CB21 /* PieChartButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B971D4F225C0080CB21 /* PieChartButton.m */; };
 		F4A20BA01D4F5A6E0080CB21 /* UIColor+Definition.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20B9F1D4F5A6E0080CB21 /* UIColor+Definition.m */; };
+		F4A20BC91D5181CA0080CB21 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20BC81D5181CA0080CB21 /* HomeViewController.m */; };
+		F4A20BCD1D5183970080CB21 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A20BCC1D5183970080CB21 /* HomeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,10 @@
 		F4A20B971D4F225C0080CB21 /* PieChartButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartButton.m; sourceTree = "<group>"; };
 		F4A20B9E1D4F5A6E0080CB21 /* UIColor+Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Definition.h"; sourceTree = "<group>"; };
 		F4A20B9F1D4F5A6E0080CB21 /* UIColor+Definition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Definition.m"; sourceTree = "<group>"; };
+		F4A20BC71D5181CA0080CB21 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F4A20BC81D5181CA0080CB21 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		F4A20BCB1D5183970080CB21 /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		F4A20BCC1D5183970080CB21 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 		F4790F6E1D48A80B00D84C09 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				F4A20BC61D5181AA0080CB21 /* HomeViewController */,
 				F4790FA11D4A185000D84C09 /* ForgetPasswordViewController */,
 				F4790F951D4A062C00D84C09 /* LoginViewController */,
 				F4790F831D49AF0D00D84C09 /* BaseViewController */,
@@ -181,6 +188,7 @@
 		F4790F6F1D48AB9200D84C09 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F4A20BCA1D51837E0080CB21 /* HomeView */,
 				F4A20B991D4F22600080CB21 /* PieChartButton */,
 				F4790F9D1D4A0C6B00D84C09 /* MainView */,
 				F4790F881D49E39A00D84C09 /* BaseView */,
@@ -310,6 +318,24 @@
 				F4A20B971D4F225C0080CB21 /* PieChartButton.m */,
 			);
 			name = PieChartButton;
+			sourceTree = "<group>";
+		};
+		F4A20BC61D5181AA0080CB21 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4A20BC71D5181CA0080CB21 /* HomeViewController.h */,
+				F4A20BC81D5181CA0080CB21 /* HomeViewController.m */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		F4A20BCA1D51837E0080CB21 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				F4A20BCB1D5183970080CB21 /* HomeView.h */,
+				F4A20BCC1D5183970080CB21 /* HomeView.m */,
+			);
+			name = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,7 +493,9 @@
 				F4790F9C1D4A066800D84C09 /* LoginView.m in Sources */,
 				F4790F531D489F0500D84C09 /* main.m in Sources */,
 				F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */,
+				F4A20BC91D5181CA0080CB21 /* HomeViewController.m in Sources */,
 				F4790F6D1D48A7F800D84C09 /* RegisterUsernameViewController.m in Sources */,
+				F4A20BCD1D5183970080CB21 /* HomeView.m in Sources */,
 				F4790FA01D4A0C7D00D84C09 /* MainView.m in Sources */,
 				F4790F811D49A70D00D84C09 /* SysVersion.m in Sources */,
 				F4790F981D4A064100D84C09 /* LoginViewController.m in Sources */,

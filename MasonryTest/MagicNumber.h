@@ -10,6 +10,7 @@
 #define MagicNumber_h
 
 // magic number
+static const int kMagicNumber0 = 0;
 static const int kMagicNumber1 = 1;
 static const int kMagicNumber2 = 2;
 static const int kMagicNumber5 = 5;
