@@ -26,10 +26,10 @@
 
     
     
-//    MainView *mainView = [[MainView alloc] initWithFrame:self.view.bounds];
-//    mainView.backgroundColor = [UIColor jk_randomColor];
-//    mainView.delegate = self;
-//    [self.view addSubview:mainView];
+    MainView *mainView = [[MainView alloc] initWithFrame:self.view.bounds];
+    mainView.backgroundColor = [UIColor jk_randomColor];
+    mainView.delegate = self;
+    [self.view addSubview:mainView];
 }
 
 -(void) viewWillAppear:(BOOL)animated {

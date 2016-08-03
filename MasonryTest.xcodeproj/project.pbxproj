@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8CDE169301618C96E644F357 /* libPods-MasonryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */; };
+		9BA3DC761D5100CB0077D354 /* new_mainview_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3DC751D5100CB0077D354 /* new_mainview_bg@2x.png */; };
 		F4790F531D489F0500D84C09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F521D489F0500D84C09 /* main.m */; };
 		F4790F561D489F0500D84C09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F551D489F0500D84C09 /* AppDelegate.m */; };
 		F4790F591D489F0500D84C09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F581D489F0500D84C09 /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		1DB9307E48E85A984E28DFD3 /* Pods-MasonryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest.release.xcconfig"; sourceTree = "<group>"; };
 		9060C0D7EE48B1B84688AD1E /* Pods-MasonryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA3DC751D5100CB0077D354 /* new_mainview_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_mainview_bg@2x.png"; sourceTree = "<group>"; };
 		E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4790F4E1D489F0500D84C09 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4790F521D489F0500D84C09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		F4790F511D489F0500D84C09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9BA3DC751D5100CB0077D354 /* new_mainview_bg@2x.png */,
 				F4790F521D489F0500D84C09 /* main.m */,
 				F4790F7C1D499D4700D84C09 /* PrefixHeader.pch */,
 				F4790F7E1D49A5E000D84C09 /* MagicNumber.h */,
@@ -322,6 +325,7 @@
 				F4790F4C1D489F0500D84C09 /* Resources */,
 				A33CDDC3AF38D68E65D50081 /* [CP] Embed Pods Frameworks */,
 				C79112E18A5D9E64BC7A6E1A /* [CP] Copy Pods Resources */,
+				CFA7F3AE6F63BA4AD236C619 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,6 +373,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA3DC761D5100CB0077D354 /* new_mainview_bg@2x.png in Resources */,
 				F4790F611D489F0500D84C09 /* LaunchScreen.storyboard in Resources */,
 				F4790F5E1D489F0500D84C09 /* Assets.xcassets in Resources */,
 				F4790F5C1D489F0500D84C09 /* Main.storyboard in Resources */,
@@ -421,6 +426,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA7F3AE6F63BA4AD236C619 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
