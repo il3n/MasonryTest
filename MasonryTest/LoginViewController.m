@@ -9,12 +9,25 @@
 #import "LoginViewController.h"
 #import "LoginView.h"
 #import "FPUsernameViewController.h"
+#import "UIViewController+KeyboardEvent.h"
 
-@interface LoginViewController ()<LoginViewDelegate>
+@interface LoginViewController ()<LoginViewDelegate, KeyboardEventProtocol>
 @property (nonatomic, strong) LoginView *loginView;
+@property (nonatomic, assign) CGFloat viewOffset;
 @end
 
 @implementation LoginViewController
+
+-(void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self addKeyboardEvent];
+    self.keyboardEventDelegate = self;
+}
+
+-(void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self removeKeyboardEvent];
+}
 
 #pragma mark-inhert
 
@@ -33,6 +46,11 @@
     
 }
 
+-(void) keyboardEvent:(UIView *)firstResponder offset:(CGFloat)offset {
+    DDLogInfo(@"firstResponder:%@", firstResponder);
+    self.viewOffset = offset;
+}
+
 #pragma mark-private method
 
 -(void) p_pushFPUsernameViewController {
@@ -47,7 +65,7 @@
     [super viewDidLayoutSubviews];
     
     [self.loginView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(@(kStatusBarHeight+kNavigationBarHeight));
+        make.top.equalTo(@(kStatusBarHeight+kNavigationBarHeight-self.viewOffset));
         make.left.equalTo(@0);
         make.width.equalTo(@(self.view.bounds.size.width));
         make.height.equalTo(@(self.view.bounds.size.height-(kStatusBarHeight+kNavigationBarHeight)));

@@ -52,7 +52,7 @@
     [self.usernameField mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self).offset(kMargin20);
         make.right.equalTo(self).offset(-kMargin20);
-        make.top.equalTo(self.titleLabel.mas_bottom).offset(kMargin20);
+        make.top.equalTo(self.titleLabel.mas_bottom).offset(350);
         make.height.equalTo(@(kMagicNumber40));
     }];
     

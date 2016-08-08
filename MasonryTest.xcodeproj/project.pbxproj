@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8CDE169301618C96E644F357 /* libPods-MasonryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */; };
 		9BA3DC761D5100CB0077D354 /* new_mainview_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA3DC751D5100CB0077D354 /* new_mainview_bg@2x.png */; };
+		F400D5581D58143A0077F779 /* UIViewController+KeyboardEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = F400D5571D58143A0077F779 /* UIViewController+KeyboardEvent.m */; };
+		F400D55B1D5815CE0077F779 /* UIView+FindFirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = F400D55A1D5815CE0077F779 /* UIView+FindFirstResponder.m */; };
 		F4790F531D489F0500D84C09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F521D489F0500D84C09 /* main.m */; };
 		F4790F561D489F0500D84C09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F551D489F0500D84C09 /* AppDelegate.m */; };
 		F4790F591D489F0500D84C09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4790F581D489F0500D84C09 /* ViewController.m */; };
@@ -42,6 +44,10 @@
 		9060C0D7EE48B1B84688AD1E /* Pods-MasonryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryTest/Pods-MasonryTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9BA3DC751D5100CB0077D354 /* new_mainview_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_mainview_bg@2x.png"; sourceTree = "<group>"; };
 		E9522843F85477B3B8AD2C57 /* libPods-MasonryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F400D5561D58143A0077F779 /* UIViewController+KeyboardEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KeyboardEvent.h"; sourceTree = "<group>"; };
+		F400D5571D58143A0077F779 /* UIViewController+KeyboardEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KeyboardEvent.m"; sourceTree = "<group>"; };
+		F400D5591D5815CE0077F779 /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		F400D55A1D5815CE0077F779 /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
 		F4790F4E1D489F0500D84C09 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4790F521D489F0500D84C09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4790F541D489F0500D84C09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -211,6 +217,10 @@
 				F4790F8D1D49E7BD00D84C09 /* UILabel+Size.m */,
 				F4A20B9E1D4F5A6E0080CB21 /* UIColor+Definition.h */,
 				F4A20B9F1D4F5A6E0080CB21 /* UIColor+Definition.m */,
+				F400D5561D58143A0077F779 /* UIViewController+KeyboardEvent.h */,
+				F400D5571D58143A0077F779 /* UIViewController+KeyboardEvent.m */,
+				F400D5591D5815CE0077F779 /* UIView+FindFirstResponder.h */,
+				F400D55A1D5815CE0077F779 /* UIView+FindFirstResponder.m */,
 			);
 			name = tools;
 			sourceTree = "<group>";
@@ -480,6 +490,7 @@
 				F4790F721D48ABAB00D84C09 /* RegisterUsernameView.m in Sources */,
 				F4A20BA01D4F5A6E0080CB21 /* UIColor+Definition.m in Sources */,
 				F4790F871D49B70E00D84C09 /* RichTextfield.m in Sources */,
+				F400D5581D58143A0077F779 /* UIViewController+KeyboardEvent.m in Sources */,
 				F4A20B981D4F225C0080CB21 /* PieChartButton.m in Sources */,
 				F4790F941D49F37F00D84C09 /* RegisterPasswordView.m in Sources */,
 				F4790F8B1D49E3A600D84C09 /* UIBaseView.m in Sources */,
@@ -494,6 +505,7 @@
 				F4790F531D489F0500D84C09 /* main.m in Sources */,
 				F4790F761D48AD9300D84C09 /* UIColor+JKRandom.m in Sources */,
 				F4A20BC91D5181CA0080CB21 /* HomeViewController.m in Sources */,
+				F400D55B1D5815CE0077F779 /* UIView+FindFirstResponder.m in Sources */,
 				F4790F6D1D48A7F800D84C09 /* RegisterUsernameViewController.m in Sources */,
 				F4A20BCD1D5183970080CB21 /* HomeView.m in Sources */,
 				F4790FA01D4A0C7D00D84C09 /* MainView.m in Sources */,

@@ -13,7 +13,7 @@
 #import "FPUsernameViewController.h"
 #import "PieChartButton.h"
 
-@interface ViewController ()<MainViewDelegate, PieChartButtonDelegate>
+@interface ViewController ()<MainViewDelegate, PieChartButtonDelegate, MainViewDelegate>
 @property (nonatomic, strong) PieChartButton *pcButton;
 
 @end
@@ -35,9 +35,9 @@
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.pcButton = [[PieChartButton alloc] initWithLeftImageName:nil rightImageName:nil bottomImageName:nil radius:kPieChartButtonRadius];
-    self.pcButton.delegate = self;
-    [self.view addSubview:self.pcButton];
+//    self.pcButton = [[PieChartButton alloc] initWithLeftImageName:nil rightImageName:nil bottomImageName:nil radius:kPieChartButtonRadius];
+//    self.pcButton.delegate = self;
+//    [self.view addSubview:self.pcButton];
 }
 
 -(void) viewWillLayoutSubviews {
@@ -95,6 +95,12 @@
 
 -(void) pieChartButton:(PieChartButton *)pieChartButton didSelectButtonType:(PieChartType)pieChartType {
     DDLogInfo(@"pieChartType:%@", @(pieChartType));
+}
+
+-(void) mainView:(MainView *)mainView didPressedLoginButton:(UIButton *)loginButton {
+    LoginViewController *loginViewController = [[LoginViewController alloc] initWithFlatNavigationBar];
+    [self.navigationController pushViewController:loginViewController animated:YES];
+
 }
 
 @end
