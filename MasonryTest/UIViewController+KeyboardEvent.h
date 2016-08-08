@@ -22,5 +22,6 @@
 -(void) removeKeyboardEvent;
 
 @property (nonatomic, weak) id<KeyboardEventProtocol>keyboardEventDelegate;
+@property (nonatomic, assign) CGFloat keyboardYDelta;
 
 @end

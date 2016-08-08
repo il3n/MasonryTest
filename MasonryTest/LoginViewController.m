@@ -65,6 +65,7 @@
     [super viewDidLayoutSubviews];
     
     [self.loginView mas_updateConstraints:^(MASConstraintMaker *make) {
+        DDLogInfo(@"top:%@",@(kStatusBarHeight+kNavigationBarHeight-self.viewOffset));
         make.top.equalTo(@(kStatusBarHeight+kNavigationBarHeight-self.viewOffset));
         make.left.equalTo(@0);
         make.width.equalTo(@(self.view.bounds.size.width));
