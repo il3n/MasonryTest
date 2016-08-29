@@ -20,13 +20,13 @@
 
 -(void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    [self addKeyboardEvent];
+    [self addKeyboardEvent];
 //    self.keyboardEventDelegate = self;
 }
 
 -(void) viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-//    [self removeKeyboardEvent];
+    [self removeKeyboardEvent];
 }
 
 #pragma mark-inhert
